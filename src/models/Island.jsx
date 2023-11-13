@@ -210,3 +210,4 @@ export function Island({
   );
 }
 
+export default Island
