@@ -11,6 +11,7 @@ import nextjs from './nextjs.svg'
 import nodejs from './nodejs.svg'
 import react from './react.svg'
 import redux from './redux.svg'
+import chakra from './chakra.png'
 import sass from './sass.svg'
 import tailwindcss from './tailwindcss.svg'
 import typescript from './typescript.svg'
@@ -19,6 +20,7 @@ import twitter from './twitter.svg'
 import car from './car.svg'
 import estate from './estate.svg'
 import pricewise from './pricewise.svg'
+import estore from './e-store.png'
 import snapgram from './snapgram.svg'
 import summiz from './summiz.svg'
 import threads from './threads.svg'
@@ -41,6 +43,7 @@ export {
     nodejs,
     react,
     redux,
+    chakra,
     sass,
     tailwindcss,
     typescript,
@@ -49,6 +52,7 @@ export {
     car,
     estate,
     pricewise,
+    estore,
     snapgram,
     summiz,
     threads,
