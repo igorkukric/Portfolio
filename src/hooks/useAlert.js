@@ -1,7 +1,7 @@
 import {useState} from 'react'
 
 const useAlert = () => {
-    const [useAlert, setAlert] = useState({ show: false, text: '', type: 'danger'})
+    const [alert, setAlert] = useState({ show: false, text: '', type: 'danger'})
 
 const showAlert = ({text, type = 'danger'}) => setAlert({
     show: true,
