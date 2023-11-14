@@ -26,6 +26,7 @@ import {
   typescript,
   figma,
   chakra,
+  estore
 } from "../assets/icons";
 
 export const skills = [

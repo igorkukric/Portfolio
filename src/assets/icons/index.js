@@ -1,4 +1,5 @@
 import css from './css.svg'
+import figma from './figma.png'
 import express from './express.svg'
 import git from './git.svg'
 import github from './github.svg'
@@ -30,6 +31,8 @@ import soundon from './soundon.png'
 import soundoff from './soundoff.png'
 
 export {
+    estore,
+    figma,
     css,
     express,
     git,
@@ -52,7 +55,7 @@ export {
     car,
     estate,
     pricewise,
-    estore,
+   
     snapgram,
     summiz,
     threads,
