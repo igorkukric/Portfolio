@@ -1,6 +1,6 @@
-import { udemy } from "../assets/images";
+import { udemy, facebook, instagram } from "../assets/images";
 import {
-  contact,
+  email,
   css,
   git,
   github,
@@ -22,17 +22,25 @@ import {
   estore,
   jotion,
   netflex,
+  gym,
+  car,
+  weather
 } from "../assets/icons";
 
 export const skills = [
+  {
+    imageUrl: html,
+    name: "HTML",
+    type: "Frontend",
+  },
   {
     imageUrl: css,
     name: "CSS",
     type: "Frontend",
   },
   {
-    imageUrl: figma,
-    name: "Figma",
+    imageUrl: javascript,
+    name: "JavaScript",
     type: "Frontend",
   },
   {
@@ -44,16 +52,6 @@ export const skills = [
     imageUrl: github,
     name: "GitHub",
     type: "Version Control",
-  },
-  {
-    imageUrl: html,
-    name: "HTML",
-    type: "Frontend",
-  },
-  {
-    imageUrl: javascript,
-    name: "JavaScript",
-    type: "Frontend",
   },
   {
     imageUrl: mongodb,
@@ -71,6 +69,11 @@ export const skills = [
     type: "Animation",
   },
   {
+    imageUrl: chakra,
+    name: "Chakra-UI",
+    type: "Frontend",
+  },
+  {
     imageUrl: mui,
     name: "Material-UI",
     type: "Frontend",
@@ -81,6 +84,11 @@ export const skills = [
     type: "Frontend",
   },
   {
+    imageUrl: figma,
+    name: "Figma",
+    type: "Frontend",
+  },
+  {
     imageUrl: nodejs,
     name: "Node.js",
     type: "Backend",
@@ -88,11 +96,6 @@ export const skills = [
   {
     imageUrl: react,
     name: "React",
-    type: "Frontend",
-  },
-  {
-    imageUrl: chakra,
-    name: "Chakra-UI",
     type: "Frontend",
   },
   {
@@ -114,7 +117,33 @@ export const skills = [
 
 export const experiences = [
   {
-    title: "Freelance Developer",
+    title: "Online Marketing Manager",
+    company_name: "Facebook",
+    icon: facebook,
+    iconBg: "#accbe1",
+    date: "Mar 2012 - Aug 2016",
+    points: [
+      "Over four and a half years as an online Facebook manager, I mastered dynamic social media landscapes.",
+      "Crafting engaging content and implementing targeted marketing strategies, I played a pivotal role in enhancing clients' online presence.",
+      "Proficient in analyzing Facebook algorithms and leveraging data analytics, I optimized campaigns for peak performance.",
+      "Beyond technical aspects, I developed effective communication skills, fostering meaningful connections within online communities.",
+    ],
+  },
+  {
+    title: "Online Marketing Specialist",
+    company_name: "Instagram",
+    icon: instagram,
+    iconBg: "#accbe1",
+    date: "Sep 2016 - Nov 2023",
+    points: [
+      "Over the past 7 years, I've cultivated extensive experience as an Online Marketing Specialist specializing in Instagram.",
+      "My role involved developing and implementing targeted marketing campaigns, contributing to the enhanced online presence of various clients and businesses on the Instagram platform.",
+      "A significant aspect of my success has been my adeptness in analyzing Instagram algorithms and utilizing data analytics to optimize strategies for maximum engagement and visibility.",
+      "Going beyond technical expertise, I've excelled in effective communication, building lasting relationships, and fostering engagement within the diverse communities present on Instagram.",
+    ],
+  },
+  {
+    title: "Frontend Developer",
     company_name: "Udemy",
     icon: udemy,
     iconBg: "#accbe1",
@@ -131,7 +160,7 @@ export const experiences = [
 export const socialLinks = [
   {
     name: "Contact",
-    iconUrl: contact,
+    iconUrl: email,
     link: "/contact",
   },
   {
@@ -170,5 +199,29 @@ export const projects = [
     description:
       "App provides a vast library of movies and TV shows, personalized recommendations, and an intuitive interface for an exceptional streaming experience.",
     link: "https://movie-app-react-firebase-pied.vercel.app/",
+  },
+  {
+    iconUrl: gym,
+    theme: "btn-back-pink",
+    name: "Gym Exercises",
+    description:
+      "The Gym Exercises React App is a web application built with React, utilizing Material-UI for the user interface. The app allows users to browse and learn about various gym exercises, along with watching video demonstrations fetched from YouTube.",
+    link: "https://gym-exercisesappigorkukric.netlify.app/",
+  },
+  {
+    iconUrl: car,
+    theme: "btn-back-black",
+    name: "Car Showcase",
+    description:
+      "The CarShowcase App is a web application built with NEXT.js, Tailwind CSS, allowing users to browse a collection of cars, fetch images for each car, search for specific cars, and benefit from autocomplete functionality to streamline their browsing experience.",
+    link: "https://car-showcase-two-rho.vercel.app/",
+  },
+  {
+    iconUrl: weather,
+    theme: "btn-back-yellow",
+    name: "Weather Forecast",
+    description:
+      "This application allows users to check the weather forecast for the next 5 days for various cities, along with live time zone information for each city. Technologies used: Plain JavaScript,HTML,CSS.",
+    link: "https://weather-forecast-app-rosy.vercel.app/",
   },
 ];

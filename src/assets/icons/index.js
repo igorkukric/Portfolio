@@ -17,12 +17,16 @@ import typescript from "./typescript.svg";
 import threejs from "./threejs.svg"
 import linkedin from "./linkedin.svg";
 import car from "./car.svg";
-import estore from "./e-store.ico";
+
+import estore from "./e-store.png";
 import jotion from "./jotion.svg";
 import netflex from "./netflex.png";
+import gym from "./gym.png"
+import weather from "./weather.png"
 import threads from "./threads.svg";
+
 import arrow from "./arrow.svg";
-import contact from "./contact.svg";
+import email from "./email.svg";
 import soundon from "./soundon.png";
 import soundoff from "./soundoff.png";
 
@@ -46,12 +50,14 @@ export {
   threejs,
   typescript,
   linkedin,
+  email,
   car,
   jotion,
   netflex,
+  gym,
+  weather,
   threads,
   arrow,
-  contact,
   soundon,
   soundoff,
 };

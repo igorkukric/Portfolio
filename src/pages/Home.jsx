@@ -8,29 +8,37 @@ import Bird from "../models/Bird";
 import Plane from "../models/Plane";
 import HomeInfo from "../components/HomeInfo";
 
-import birds from '../assets/birds.wav'
+import plane from "../assets/plane.mp3";
 import { soundoff, soundon } from "../assets/icons";
 
 const Home = () => {
-  const audiRef = useRef(new Audio(birds))
-  audiRef.current.volume = 0.4
-  audiRef.current.loop = true
+  const audiRef = useRef(new Audio(plane));
+  audiRef.current.volume = 0.4;
+  audiRef.current.loop = true;
 
   const [isRotating, setIsRotating] = useState(false);
   const [currentStage, setCurrentStage] = useState(1);
-  const [isPlayingMusic, setIsPlayingMusic] = useState(false)
-
+  const [isPlayingMusic, setIsPlayingMusic] = useState(false);
 
   useEffect(() => {
-    if(isPlayingMusic) {
-      audiRef.current.play()
-    }
-  
+    const audio = audiRef.current;
+    audio.play()
+
     return () => {
-      audiRef.current.pause()
+      audio.pause();
+      audio.currentTime = 0;
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isPlayingMusic) {
+      audiRef.current.play();
     }
-  }, [isPlayingMusic])
-  
+
+    return () => {
+      audiRef.current.pause();
+    };
+  }, [isPlayingMusic]);
 
   const adjustIslandForScreenSize = () => {
     let screenScale = null;
@@ -67,7 +75,7 @@ const Home = () => {
   return (
     <section className="w-full h-screen relative">
       <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
-        {currentStage && <HomeInfo  currentStage={currentStage}/>}
+        {currentStage && <HomeInfo currentStage={currentStage} />}
       </div>
       <Canvas
         className={`w-full h-screen bg-transparent" ${
@@ -104,7 +112,7 @@ const Home = () => {
       </Canvas>
 
       <div className="absolute bottom-2 left-2">
-        <img 
+        <img
           src={!isPlayingMusic ? soundoff : soundon}
           alt="sound"
           className="w-20 h-20 cursor-pointer object-contain"
