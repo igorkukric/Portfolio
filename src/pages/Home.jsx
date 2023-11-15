@@ -20,15 +20,15 @@ const Home = () => {
   const [currentStage, setCurrentStage] = useState(1);
   const [isPlayingMusic, setIsPlayingMusic] = useState(false);
 
-  useEffect(() => {
-    const audio = audiRef.current;
-    audio.play()
+  // useEffect(() => {
+  //   const audio = audiRef.current;
+  //   audio.play()
 
-    return () => {
-      audio.pause();
-      audio.currentTime = 0;
-    };
-  }, []);
+  //   return () => {
+  //     audio.pause();
+  //     audio.currentTime = 0;
+  //   };
+  // }, []);
 
   useEffect(() => {
     if (isPlayingMusic) {
