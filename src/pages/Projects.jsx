@@ -2,10 +2,11 @@ import { Link } from 'react-router-dom';
 import {projects} from '../constants'
 import { arrow } from '../assets/icons';
 import CTA from '../components/CTA'
+import Footer from '../components/Footer';
 
 const Projects = () => {
   return (
-    <section className="max-container h-[100vh]">
+    <section className="max-container">
       <h1 className="head-text">
         My{" "}
         <span className="blue-gradient_text font-semibold drop-shadow">
@@ -15,7 +16,7 @@ const Projects = () => {
       </h1>
 
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
-        <p>
+        <p className='text-[20px]'>
           Over the years, I've undertaken numerous projects, but the ones that
           are particularly dear to me are a select few. A significant number of
           these projects are open-source, so if you encounter something that
@@ -25,7 +26,7 @@ const Projects = () => {
         </p>
       </div>
 
-      <div className="flex flex-wrap my-20 gap-16">
+      <div className="flex flex-wrap my-20 gap-16 text-[20px]">
         {projects.map((project) => (
           <div className='lg:w-[400px] w-full' key={project.name}>
             <div className='block-container w-12 h-12'>
@@ -69,6 +70,10 @@ const Projects = () => {
       <hr className='border-slate-200' />
 
       <CTA />
+
+      <div className="mt-10 ">
+        <Footer />
+      </div>
     </section>
   );
 };

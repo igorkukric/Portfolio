@@ -1,10 +1,7 @@
-import {  udemy } from "../assets/images";
+import { udemy } from "../assets/images";
 import {
-  car,
   contact,
   css,
-  estate,
-  express,
   git,
   github,
   html,
@@ -15,18 +12,16 @@ import {
   mui,
   nextjs,
   nodejs,
-  pricewise,
   react,
-  redux,
   sass,
-  snapgram,
-  summiz,
   tailwindcss,
-  threads,
   typescript,
+  threejs,
   figma,
   chakra,
-  estore
+  estore,
+  jotion,
+  netflex,
 } from "../assets/icons";
 
 export const skills = [
@@ -68,6 +63,11 @@ export const skills = [
   {
     imageUrl: motion,
     name: "Motion",
+    type: "Animation",
+  },
+  {
+    imageUrl: threejs,
+    name: "Threejs",
     type: "Animation",
   },
   {
@@ -114,7 +114,7 @@ export const skills = [
 
 export const experiences = [
   {
-    title: "Frelance Developer",
+    title: "Freelance Developer",
     company_name: "Udemy",
     icon: udemy,
     iconBg: "#accbe1",
@@ -126,7 +126,6 @@ export const experiences = [
       "Taking part in code evaluations and offering valuable input to fellow developers.",
     ],
   },
-  
 ];
 
 export const socialLinks = [
@@ -154,7 +153,22 @@ export const projects = [
     name: "New Line Shop",
     description:
       "Shop confidently at New Line Shop with Next.js for speed, Stripe for security, Clerk for ease, and PrismaDB for efficiency. Your satisfaction is our priority.",
-    link: "https://github.com/igorkukric/ecommerce-store",
+    link: "https://newlineshop.vercel.app/",
   },
- 
+  {
+    iconUrl: jotion,
+    theme: "btn-back-green",
+    name: "Jotion",
+    description:
+      "Jotion combines Next.js for speed, Convex for database management, and Tailwind/Shadcn for aesthetics, providing users with a powerful platform for effortless text and media creation, editing, and management.",
+    link: "https://jotion-tan.vercel.app/",
+  },
+  {
+    iconUrl: netflex,
+    theme: "btn-back-blue",
+    name: "NetflEx",
+    description:
+      "App provides a vast library of movies and TV shows, personalized recommendations, and an intuitive interface for an exceptional streaming experience.",
+    link: "https://movie-app-react-firebase-pied.vercel.app/",
+  },
 ];

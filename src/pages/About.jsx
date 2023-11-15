@@ -6,6 +6,7 @@ import "react-vertical-timeline-component/style.min.css";
 
 import { skills, experiences } from "../constants";
 import CTA from "../components/CTA";
+import Footer from "../components/Footer";
 
 const About = () => {
   return (
@@ -14,12 +15,13 @@ const About = () => {
         Hello, I'm{" "}
         <span className="blue-gradient_text font-semibold drop-shadow">
           Igor
-        </span>{""}
+        </span>
+        {""}
         👋
       </h1>
 
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
-        <p>
+        <p className="text-[20px]">
           I am a Software Engineer located in Serbia, with expertise in
           facilitating technical education through practical, hands-on learning
           experiences and application development.
@@ -31,7 +33,7 @@ const About = () => {
 
         <div className="mt-16 flex flex-wrap gap-12">
           {skills.map((skill) => (
-            <div className="block-container w-20 h-20">
+            <div className="block-container w-20 h-20" key={skill.name}>
               <div className="btn-back rounded-xl" />
               <div className="btn-front rounded-xl flex justify-center items-center">
                 <img
@@ -48,7 +50,7 @@ const About = () => {
       <div className="py-16">
         <h3 className="subhead-text">Work Experience. </h3>
         <div className="mt-5 flex flex-col gap-3 text-slate-500">
-          <p>
+          <p className="text-[20px]">
             As a proficient software developer, I have knowledge of JavaScript
             and frameworks like React, Node.js, and Three.js. I'm a quick
             learner and work closely with clients to develop solutions that are
@@ -81,7 +83,7 @@ const About = () => {
                 }}
               >
                 <div>
-                  <h3 className="text-blac text-xl font-poppins font-semibold">
+                  <h3 className="text-black text-xl font-poppins font-semibold">
                     {experience.title}
                   </h3>
                   <p
@@ -96,7 +98,7 @@ const About = () => {
                   {experience.points.map((point, index) => (
                     <li
                       key={`experience-point-${index}`}
-                      className="text-black-500/50 font-normal pl-1 text-sm"
+                      className="text-gray-500 font-normal pl-1 text-md"
                     >
                       {point}
                     </li>
@@ -111,6 +113,9 @@ const About = () => {
       <hr className="border-slat-200" />
 
       <CTA />
+      <div className="mt-10 ">
+        <Footer />
+      </div>
     </section>
   );
 };
