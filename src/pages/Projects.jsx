@@ -16,8 +16,8 @@ const Projects = () => {
         💻
       </h1>
 
-      <div className="mt-5 flex flex-col gap-3 text-slate-500">
-        <p className='text-[20px]'>
+     
+        <p className='text-slate-500 mt-2 leading-relaxed'>
           Over the years, I've undertaken numerous projects, but the ones that
           are particularly dear to me are a select few. A significant number of
           these projects are open-source, so if you encounter something that
@@ -25,9 +25,9 @@ const Projects = () => {
           share your ideas for potential improvements. Your collaboration is
           greatly appreciated!
         </p>
-      </div>
+      
 
-      <div className="flex flex-wrap my-20 gap-16 text-[20px]">
+      <div className="flex flex-wrap my-20 gap-16">
         {projects.map((project) => (
           <div className='lg:w-[400px] w-full' key={project.name}>
             <div className='block-container w-12 h-12'>

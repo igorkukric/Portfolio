@@ -21,7 +21,7 @@ const About = () => {
       </h1>
 
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
-        <p className="text-[20px]">
+        <p>
           I am a Software Engineer located in Serbia, with expertise in
           facilitating technical education through practical, hands-on learning
           experiences and application development.
@@ -50,7 +50,7 @@ const About = () => {
       <div className="py-16">
         <h3 className="subhead-text">Work Experience. </h3>
         <div className="mt-5 flex flex-col gap-3 text-slate-500">
-          <p className="text-[20px]">
+          <p>
             As a proficient software developer, I have knowledge of JavaScript
             and frameworks like React, Node.js, and Three.js. I'm a quick
             learner and work closely with clients to develop solutions that are
@@ -98,7 +98,7 @@ const About = () => {
                   {experience.points.map((point, index) => (
                     <li
                       key={`experience-point-${index}`}
-                      className="text-gray-500 font-normal pl-1 text-md"
+                      className="text-gray-500 font-normal pl-1 text-sm"
                     >
                       {point}
                     </li>
