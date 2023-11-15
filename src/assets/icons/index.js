@@ -11,19 +11,21 @@ import nextjs from "./nextjs.svg";
 import nodejs from "./nodejs.svg";
 import react from "./react.svg";
 import chakra from "./chakra.png";
+import prisma from "./prisma.png"
 import sass from "./sass.svg";
 import tailwindcss from "./tailwindcss.svg";
 import typescript from "./typescript.svg";
 import threejs from "./threejs.svg"
 import linkedin from "./linkedin.svg";
-import car from "./car.svg";
 
+import car from "./car.svg";
 import estore from "./e-store.png";
 import jotion from "./jotion.svg";
 import netflex from "./netflex.png";
 import gym from "./gym.png"
 import weather from "./weather.png"
-import threads from "./threads.svg";
+import threads from "./threads.ico";
+import food from "./food.png"
 
 import arrow from "./arrow.svg";
 import email from "./email.svg";
@@ -45,6 +47,7 @@ export {
   nodejs,
   react,
   chakra,
+  prisma,
   sass,
   tailwindcss,
   threejs,
@@ -57,6 +60,7 @@ export {
   gym,
   weather,
   threads,
+  food,
   arrow,
   soundon,
   soundoff,

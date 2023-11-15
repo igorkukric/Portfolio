@@ -8,6 +8,7 @@ import {
   javascript,
   linkedin,
   mongodb,
+  prisma,
   motion,
   mui,
   nextjs,
@@ -24,7 +25,9 @@ import {
   netflex,
   gym,
   car,
-  weather
+  weather,
+  threads,
+  food
 } from "../assets/icons";
 
 export const skills = [
@@ -44,6 +47,16 @@ export const skills = [
     type: "Frontend",
   },
   {
+    imageUrl: typescript,
+    name: "TypeScript",
+    type: "Frontend",
+  },
+  {
+    imageUrl: tailwindcss,
+    name: "Tailwind CSS",
+    type: "Frontend",
+  },
+  {
     imageUrl: git,
     name: "Git",
     type: "Version Control",
@@ -56,6 +69,11 @@ export const skills = [
   {
     imageUrl: mongodb,
     name: "MongoDB",
+    type: "Database",
+  },
+  {
+    imageUrl: prisma,
+    name: "PrismaDB",
     type: "Database",
   },
   {
@@ -101,16 +119,6 @@ export const skills = [
   {
     imageUrl: sass,
     name: "Sass",
-    type: "Frontend",
-  },
-  {
-    imageUrl: tailwindcss,
-    name: "Tailwind CSS",
-    type: "Frontend",
-  },
-  {
-    imageUrl: typescript,
-    name: "TypeScript",
     type: "Frontend",
   },
 ];
@@ -223,5 +231,21 @@ export const projects = [
     description:
       "This application allows users to check the weather forecast for the next 5 days for various cities, along with live time zone information for each city. Technologies used: Plain JavaScript,HTML,CSS.",
     link: "https://weather-forecast-app-rosy.vercel.app/",
+  },
+  {
+    iconUrl: threads,
+    theme: "btn-back-green",
+    name: "Threads",
+    description:
+      "Real-time chat in a MERN/Clerk Next.js app streamlines workplace communication, enhancing productivity and team connectivity.",
+    link: "https://threads-mern-clerk.vercel.app/",
+  },
+  {
+    iconUrl: food,
+    theme: "btn-back-pink",
+    name: "Food Recipe",
+    description:
+      "Welcome to the Plain JavaScript Food Recipe App. Discover and save your favorite recipes with ease. Enjoy detailed instructions and video support for a delightful cooking experience. Let's dive in!",
+    link: "https://food-recipe-app-pearl.vercel.app/",
   },
 ];
