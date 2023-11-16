@@ -209,6 +209,14 @@ export const projects = [
     link: "https://movie-app-react-firebase-pied.vercel.app/",
   },
   {
+    iconUrl: threads,
+    theme: "btn-back-green",
+    name: "Threads",
+    description:
+      "Real-time chat in a MERN/Clerk Next.js app streamlines workplace communication, enhancing productivity and team connectivity.",
+    link: "https://threads-mern-clerk.vercel.app/",
+  },
+  {
     iconUrl: gym,
     theme: "btn-back-pink",
     name: "Gym Exercises",
@@ -231,14 +239,6 @@ export const projects = [
     description:
       "This application allows users to check the weather forecast for the next 5 days for various cities, along with live time zone information for each city. Technologies used: Plain JavaScript,HTML,CSS.",
     link: "https://weather-forecast-app-rosy.vercel.app/",
-  },
-  {
-    iconUrl: threads,
-    theme: "btn-back-green",
-    name: "Threads",
-    description:
-      "Real-time chat in a MERN/Clerk Next.js app streamlines workplace communication, enhancing productivity and team connectivity.",
-    link: "https://threads-mern-clerk.vercel.app/",
   },
   {
     iconUrl: food,
