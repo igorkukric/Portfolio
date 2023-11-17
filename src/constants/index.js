@@ -20,6 +20,7 @@ import {
   threejs,
   figma,
   chakra,
+  shadcn,
   estore,
   jotion,
   netflex,
@@ -54,6 +55,11 @@ export const skills = [
   {
     imageUrl: tailwindcss,
     name: "Tailwind CSS",
+    type: "Frontend",
+  },
+  {
+    imageUrl: shadcn,
+    name: "ShadcnUI",
     type: "Frontend",
   },
   {

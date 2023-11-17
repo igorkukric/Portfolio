@@ -11,6 +11,7 @@ import nextjs from "./nextjs.svg";
 import nodejs from "./nodejs.svg";
 import react from "./react.svg";
 import chakra from "./chakra.png";
+import shadcn from "./shadcn.png"
 import prisma from "./prisma.png"
 import sass from "./sass.svg";
 import tailwindcss from "./tailwindcss.svg";
@@ -47,6 +48,7 @@ export {
   nodejs,
   react,
   chakra,
+  shadcn,
   prisma,
   sass,
   tailwindcss,
